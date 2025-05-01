@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Hello Coursera</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <title>Name calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./app.js"></script>
 </head>
-<body>
-    <h1>Hello Coursera Students</h1>
+<body ng-app="NameCalculator">
+    <h1>Name calculator</h1>
+    <!-- 01 -->
+    <!-- <div ng-controller="myfirstController">
+        {{sayHello()}} 
+        <br/>
+        <br/>
+        <input type="text" ng-model="name">
+        Inside my inpu box is: {{name}}
+    </div> -->
+    <div ng-controller="NameCalculatorController">
+        <div>
+            Your name:
+            <input type="text">
+        </div>
+        <div>Total numeric value of person's name is: </div>
+    </div>
 </body>
 </html>
